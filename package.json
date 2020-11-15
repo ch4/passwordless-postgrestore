@@ -1,6 +1,6 @@
 {
-  "name": "passwordless-postgrestore",
-  "version": "1.0.0",
+  "name": "@ch4/passwordless-postgrestore",
+  "version": "1.1.1",
   "description": "PostgreSQL TokenStore for Passwordless",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "dependencies": {
     "bcrypt": "5.0.0",
     "passwordless-tokenstore": "0.0.10",
-    "pg": "^6.4.0"
+    "pg": "^8.5.1"
   },
   "devDependencies": {
     "chai": "^4.0.2",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Battochon/passwordless-postgrestore.git"
+    "url": "https://github.com/ch4/passwordless-postgrestore.git"
   },
   "keywords": [
     "postgresql",
@@ -36,7 +36,10 @@
   "author": "Bruno MARQUES <bruno@lookup-media.com> (http://marques.io)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/battochon/passwordless-postgrestore/issues"
+    "url": "https://github.com/ch4/passwordless-postgrestore/issues"
   },
-  "homepage": "https://github.com/battochon/passwordless-postgrestore"
+  "homepage": "https://github.com/ch4/passwordless-postgrestore",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ch4"
+  }
 }
