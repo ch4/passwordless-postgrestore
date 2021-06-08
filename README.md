@@ -41,7 +41,8 @@ passwordless.init(new PostgreStore('postgres://user:password@localhost/database'
     pgstore: {
         table: 'not_default_table_name',    // *(String)* Optional. Use another table to store token, default is 'passwordless'
         pgPoolSize: '100'                   // *(Number)* Optional. Postgre client pool size
-    }
+    },
+    ssl: {rejectUnauthorized: false}, // *(boolean / { rejectUnauthorized: boolean})* Optional. Used to solve self signed cerificate error in pg npm module
 }));
 ```
 
